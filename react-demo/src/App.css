@@ -1,0 +1,101 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 400px;
+  background-color: #eeeeee;
+  border: 2px solid;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.pass-generator{
+  height: 30px;
+  width: 270px;
+  color: white;
+  background-color: gray;
+}
+
+.form-group{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.copy-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(57rem, 16.7rem);
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  background-color: #03a9f4;
+}
+
+.copy-btn:active{
+  position: absolute;
+  transform: translate(57rem, 16.9rem);
+  background-color: #079de2;
+}
+
+input[type="checkbox"]{
+  
+  width: 50px;
+  height: 20px;
+  appearance: none;
+  border-radius: 50px;
+  background-color: #c6c6c6;
+  position: relative;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+input:checked[type="checkbox"]{
+  background-color: #03a9f4;
+}
+
+input[type="checkbox"]::before{
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -2px;
+  left: -5px;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.5s;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+input:checked[type="checkbox"]::before{
+  left: 30px;
+}
+
+.generator-btn{
+  width: 17rem;
+  height: 30px;
+  background-color: #03a9f4;
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+}
+
+.generator-btn:active{
+  transform: translateY(2px);
+  background-color: #079de2;
+}
+
+input[type="number"]{
+  transform: translateX(-1.9px);
+}
